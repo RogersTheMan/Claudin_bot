@@ -14,9 +14,15 @@ for (const file in commands){
     commands.push(command.data.toJSON())
 }
 
-const rest = new REST({version:"10"}).setToken(TOKEN)
+
 
 //dotenv
 const dotenv = require("dotenv")
 dotenv.config()
 const { TOKEN } = process.env
+
+// rest
+const rest = new REST({version:"10"}).setToken(TOKEN)
+
+// deploy 
+(async () => {})
